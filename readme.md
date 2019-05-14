@@ -1,6 +1,6 @@
 # Passport Auth
 
-Passport Auth is a simple back-end application for secure authentication with passport and jsonwebtoken.
+Passport Auth is a simple back-end application for secure authentication :lock: with passport and jsonwebtoken.
 
 # Description
 
@@ -24,10 +24,12 @@ Developped with [NodeJS](https://nodejs.org/en/NodeJS) / [mySQL](https://www.mys
 
 An user can create an account with email and password.
 
-_with [postman](https://www.getpostman.com/) a user is created on URL /api/users/register_
+_with [postman](https://www.getpostman.com/) a user is created on URL /api/users/register :_
+
 ![postman_register](./screenshots/Screen01-postman.png)
 
-_in PhpMyAdmin we can see that user is created in database with crypted password_
+_in PhpMyAdmin we can see that user is created in database with crypted password :_
+
 ![phpmyadminn](./screenshots/Screen02-PMA.png)
 
 ### Authenticate
@@ -37,15 +39,15 @@ An user can authenticate with email and password.
 _with postman a user is authenticated on URL /api/users/authenticate_
 ![postman_auth](./screenshots/Screen03-postman_auth.png)
 
-If user's password is correct, a JWT token is generated and will allow user to access some routes, like /api/dashboard.
+If user's password is correct, a JWT token is generated and will allow user to access some routes, like _/api/dashboard_ :key:.
 
 ### Routes
 
 3 routes are already available :
 
-- /api/users/register
-- /api/users/authenticate
-- /api/dashboard
+- _/api/users/register_
+- _/api/users/authenticate_
+- _/api/dashboard_
 
 # Getting started
 
@@ -60,7 +62,7 @@ If you're not comfortable to handle database from CLI, you can install [PhpMyAdm
 - Clone the repo
 
 ```
-git clone https://github.com/ElisaHery/passport-auth.git
+git clone https://github.com/qdanneville/passport-jwt-mysql
 ```
 
 - Install dependencies
@@ -72,7 +74,7 @@ npm install
 - Import database in PhpMyAdmin from file
   _dbScripts/passport-auth.sql_
 
-- To establish connexion between app and database, change your informations in config/main.js file
+- To establish connexion between app and database, change informations in config/main.js file
 
 ```module.exports = {
   secret: "Passphrase for encryption",
@@ -89,7 +91,7 @@ npm install
 npm run start-dev
 ```
 
-- Enjoy!
+- Enjoy :sparkles:!
 
 # Authors
 
