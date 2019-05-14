@@ -39,6 +39,14 @@ _with postman a user is authenticated on URL /api/users/authenticate_
 
 If user's password is correct, a JWT token is generated and will allow user to access some routes, like /api/dashboard.
 
+### Routes
+
+3 routes are already available :
+
+- /api/users/register
+- /api/users/authenticate
+- /api/dashboard
+
 # Getting started
 
 ## Prerequisites
@@ -52,7 +60,7 @@ If you're not comfortable to handle database from CLI, you can install [PhpMyAdm
 - Clone the repo
 
 ```
-git clone https://github.com/qdanneville/passport-jwt-mysql
+git clone https://github.com/ElisaHery/passport-auth.git
 ```
 
 - Install dependencies
@@ -64,7 +72,7 @@ npm install
 - Import database in PhpMyAdmin from file
   _dbScripts/passport-auth.sql_
 
-- To establish connexion between app and database, change password and in congig/main.js file
+- To establish connexion between app and database, change your informations in config/main.js file
 
 ```module.exports = {
   secret: "Passphrase for encryption",
